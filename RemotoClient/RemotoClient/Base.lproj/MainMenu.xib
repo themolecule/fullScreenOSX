@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="webView" destination="v2c-mx-sgY" id="lxg-Xk-Xk3"/>
+                <outlet property="webWindow" destination="QvC-M9-y7g" id="ns3-0V-1a2"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="RemotoClient" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="RemotoClient" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="Quit RemotoClient" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Quit RemotoClient" hidden="YES" alternate="YES" id="DPB-Ro-o2X">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Rpu-qz-Gv4"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="RemotoClient" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="WebKitWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="v2c-mx-sgY">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v2c-mx-sgY" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="1Lq-71-aYu"/>
+                    <constraint firstAttribute="bottom" secondItem="v2c-mx-sgY" secondAttribute="bottom" id="FRX-Sc-kwq"/>
+                    <constraint firstItem="v2c-mx-sgY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="GIb-dn-uJk"/>
+                    <constraint firstAttribute="trailing" secondItem="v2c-mx-sgY" secondAttribute="trailing" id="vgw-RJ-Q0o"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="588.5" y="479"/>
+        </window>
+    </objects>
+</document>

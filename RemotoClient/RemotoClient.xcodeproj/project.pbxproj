@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0996AEDF1C7E842A004C6371 /* url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0996AEDE1C7E842A004C6371 /* url.txt */; };
+		F7A7DD201C7DFFD0000C6877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7DD1F1C7DFFD0000C6877 /* AppDelegate.m */; };
+		F7A7DD221C7DFFD0000C6877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7DD211C7DFFD0000C6877 /* main.m */; };
+		F7A7DD241C7DFFD0000C6877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A7DD231C7DFFD0000C6877 /* Images.xcassets */; };
+		F7A7DD271C7DFFD0000C6877 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A7DD251C7DFFD0000C6877 /* MainMenu.xib */; };
+		F7A7DD3D1C7E0771000C6877 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A7DD3C1C7E0771000C6877 /* WebKit.framework */; };
+		F7A7DD401C7E0AB3000C6877 /* WebKitWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7DD3F1C7E0AB3000C6877 /* WebKitWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0996AEDE1C7E842A004C6371 /* url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = url.txt; sourceTree = "<group>"; };
+		F7A7DD191C7DFFD0000C6877 /* RemotoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemotoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A7DD1D1C7DFFD0000C6877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A7DD1E1C7DFFD0000C6877 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7A7DD1F1C7DFFD0000C6877 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7A7DD211C7DFFD0000C6877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7A7DD231C7DFFD0000C6877 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F7A7DD261C7DFFD0000C6877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F7A7DD3C1C7E0771000C6877 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F7A7DD3E1C7E0A99000C6877 /* WebKitWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitWindow.h; sourceTree = "<group>"; };
+		F7A7DD3F1C7E0AB3000C6877 /* WebKitWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebKitWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7A7DD161C7DFFD0000C6877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A7DD3D1C7E0771000C6877 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0964C24D1C7E51D90048D6FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7DD3C1C7E0771000C6877 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7A7DD101C7DFFD0000C6877 = {
+			isa = PBXGroup;
+			children = (
+				0964C24D1C7E51D90048D6FC /* Frameworks */,
+				F7A7DD1B1C7DFFD0000C6877 /* RemotoClient */,
+				F7A7DD1A1C7DFFD0000C6877 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7A7DD1A1C7DFFD0000C6877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7DD191C7DFFD0000C6877 /* RemotoClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7A7DD1B1C7DFFD0000C6877 /* RemotoClient */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7DD1E1C7DFFD0000C6877 /* AppDelegate.h */,
+				F7A7DD1F1C7DFFD0000C6877 /* AppDelegate.m */,
+				F7A7DD231C7DFFD0000C6877 /* Images.xcassets */,
+				F7A7DD251C7DFFD0000C6877 /* MainMenu.xib */,
+				0996AEDE1C7E842A004C6371 /* url.txt */,
+				F7A7DD1C1C7DFFD0000C6877 /* Supporting Files */,
+				F7A7DD3E1C7E0A99000C6877 /* WebKitWindow.h */,
+				F7A7DD3F1C7E0AB3000C6877 /* WebKitWindow.m */,
+			);
+			path = RemotoClient;
+			sourceTree = "<group>";
+		};
+		F7A7DD1C1C7DFFD0000C6877 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7DD1D1C7DFFD0000C6877 /* Info.plist */,
+				F7A7DD211C7DFFD0000C6877 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7A7DD181C7DFFD0000C6877 /* RemotoClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7A7DD361C7DFFD0000C6877 /* Build configuration list for PBXNativeTarget "RemotoClient" */;
+			buildPhases = (
+				F7A7DD151C7DFFD0000C6877 /* Sources */,
+				F7A7DD161C7DFFD0000C6877 /* Frameworks */,
+				F7A7DD171C7DFFD0000C6877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemotoClient;
+			productName = RemotoClient;
+			productReference = F7A7DD191C7DFFD0000C6877 /* RemotoClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7A7DD111C7DFFD0000C6877 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Remoto, Inc";
+				TargetAttributes = {
+					F7A7DD181C7DFFD0000C6877 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = F7A7DD141C7DFFD0000C6877 /* Build configuration list for PBXProject "RemotoClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7A7DD101C7DFFD0000C6877;
+			productRefGroup = F7A7DD1A1C7DFFD0000C6877 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7A7DD181C7DFFD0000C6877 /* RemotoClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7A7DD171C7DFFD0000C6877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0996AEDF1C7E842A004C6371 /* url.txt in Resources */,
+				F7A7DD241C7DFFD0000C6877 /* Images.xcassets in Resources */,
+				F7A7DD271C7DFFD0000C6877 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7A7DD151C7DFFD0000C6877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A7DD221C7DFFD0000C6877 /* main.m in Sources */,
+				F7A7DD401C7E0AB3000C6877 /* WebKitWindow.m in Sources */,
+				F7A7DD201C7DFFD0000C6877 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7A7DD251C7DFFD0000C6877 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7A7DD261C7DFFD0000C6877 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7A7DD341C7DFFD0000C6877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F7A7DD351C7DFFD0000C6877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F7A7DD371C7DFFD0000C6877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RemotoClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = RemotoClient;
+			};
+			name = Debug;
+		};
+		F7A7DD381C7DFFD0000C6877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RemotoClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = RemotoClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7A7DD141C7DFFD0000C6877 /* Build configuration list for PBXProject "RemotoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7A7DD341C7DFFD0000C6877 /* Debug */,
+				F7A7DD351C7DFFD0000C6877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7A7DD361C7DFFD0000C6877 /* Build configuration list for PBXNativeTarget "RemotoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7A7DD371C7DFFD0000C6877 /* Debug */,
+				F7A7DD381C7DFFD0000C6877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7A7DD111C7DFFD0000C6877 /* Project object */;
+}
