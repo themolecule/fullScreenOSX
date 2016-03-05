@@ -14,6 +14,9 @@ If the Resources/url.txt file is edited, it will load a url from there.
 
 There is no claim here that this is the best way, or even a good way, to work with the WebKit or Cocoa API.  Some other approaches are commented in the code, but none of them seemed to do it quite right aside from manually positioning a window against the union of all screen rects.
 
+I've replaced WebView with WKWebView, which is significantly better and hardware accelerated!  Unfortunately, the Interface Builder doesn't allow direct creation, so it's created in code.
+
+
 Please offer comments, suggestions, and revisions to this!
 
 thanks!
