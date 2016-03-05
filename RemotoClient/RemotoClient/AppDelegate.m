@@ -12,6 +12,8 @@
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSView *view;
+
 @end
 
 @implementation AppDelegate
@@ -60,7 +62,22 @@
     
     NSLog(@"Loading url: %@\n",url);
     
-    [[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:url]];
+    NSRect r;
+    r.size.width = webWindow.frame.size.width;
+    r.size.height = webWindow.frame.size.height;
+    
+    webView = [[WKWebView alloc] initWithFrame:r];
+    //NSLog(@"Rect %@", NSStringFromRect(webWindow.frame));
+    
+    //webView.navigationDelegate = self;
+    [self.view addSubview:webView];
+    webView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+    
+    NSURLRequest *nsrequest=[NSURLRequest requestWithURL:url];
+    [webView loadRequest:nsrequest];
+
+    //[webView loadRequest:[NSURLRequest requestWithURL:url]];
+    //[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:url]];
     
     [self fullScreen:NULL];
 }
@@ -78,15 +95,24 @@
     
 //    int windowLevel = CGShieldingWindowLevel();
     
-    NSRect w;
     NSArray *s = [NSScreen screens];
+    NSRect w = [s[0] frame];
     for(int i=0;i<s.count;i++)
         w = NSUnionRect(w,[s[i] frame]);
-    //NSLog(@"Rect %@", NSStringFromRect(w));
+    NSLog(@"Rect %@", NSStringFromRect(w));
     
-    //NSScreen *screen = [NSScreen mainScreen];
-    //NSRect winFrame = [screen frame];
-    //[webWindow setFrame: winFrame display: YES animate: NO];
+    //webWindow.level = CGShieldingWindowLevel();
+    //[webWindow makeKeyAndOrderFront:nil];
+    
+    //return;
+    
+    NSApplication *app = [NSApplication sharedApplication];
+    app.presentationOptions = app.currentSystemPresentationOptions | NSApplicationPresentationFullScreen;
+    
+    //w.size.width*=.95;
+    //w.size.height = 500;
+
+    //[[NSApplication sharedApplication] setPresentationOptions:NSFullScreenWindowMask];
     
     [webWindow setFrame: w display: YES animate: NO];
     [webWindow setHasShadow:NO];
@@ -97,8 +123,11 @@
     [webWindow setLevel:NSScreenSaverWindowLevel-1];
     //[webWindow setLevel:windowLevel];
 
-//    [webView enterFullScreenMode:NULL withOptions:NULL];
-//    [webView setFrame:w];
+    //[webView enterFullScreenMode:NULL withOptions:NULL];
+    //[webView setFrame:w];
+    
+    //claim focus, so key commands work if started from command line, for instance.
+    [webWindow becomeFirstResponder];
     
     // hide the cursor
     CGDisplayHideCursor (kCGDirectMainDisplay);

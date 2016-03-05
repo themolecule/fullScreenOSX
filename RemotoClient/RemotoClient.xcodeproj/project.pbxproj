@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0996AEDF1C7E842A004C6371 /* url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0996AEDE1C7E842A004C6371 /* url.txt */; };
+		F7A06CDC1C83EFCA003B57AF /* RemotoClient.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7A7DD191C7DFFD0000C6877 /* RemotoClient.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7A7DD201C7DFFD0000C6877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7DD1F1C7DFFD0000C6877 /* AppDelegate.m */; };
 		F7A7DD221C7DFFD0000C6877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7DD211C7DFFD0000C6877 /* main.m */; };
 		F7A7DD241C7DFFD0000C6877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A7DD231C7DFFD0000C6877 /* Images.xcassets */; };
@@ -15,6 +16,19 @@
 		F7A7DD3D1C7E0771000C6877 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A7DD3C1C7E0771000C6877 /* WebKit.framework */; };
 		F7A7DD401C7E0AB3000C6877 /* WebKitWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A7DD3F1C7E0AB3000C6877 /* WebKitWindow.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7A06CDB1C83EFC5003B57AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../../../../../..;
+			dstSubfolderSpec = 16;
+			files = (
+				F7A06CDC1C83EFCA003B57AF /* RemotoClient.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0996AEDE1C7E842A004C6371 /* url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = url.txt; sourceTree = "<group>"; };
@@ -101,6 +115,7 @@
 				F7A7DD151C7DFFD0000C6877 /* Sources */,
 				F7A7DD161C7DFFD0000C6877 /* Frameworks */,
 				F7A7DD171C7DFFD0000C6877 /* Resources */,
+				F7A06CDB1C83EFC5003B57AF /* CopyFiles */,
 			);
 			buildRules = (
 			);

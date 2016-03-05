@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import <AppKit/AppKit.h>
+#import <Foundation/Foundation.h>
 
 #import "WebKitWindow.h"
 
@@ -15,10 +17,10 @@
 {
     IBOutlet WebKitWindow   *webWindow;
 //    IBOutlet NSWindow       *webWindow;
-    IBOutlet WebView        *webView;
+    IBOutlet WKWebView     *webView;
 }
 
-@property (nonatomic, retain) IBOutlet WebView *webView;
+@property (nonatomic, retain) IBOutlet WKWebView *webView;
 
 -(IBAction)fullScreen:(id)sender;
 
