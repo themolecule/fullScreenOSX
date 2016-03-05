@@ -1,8 +1,8 @@
 
 
-This is a simple xcode project that creates a WebKit view and maximizes it on launch.  This is in response to Apple's "Spaces" system which seems to forbid one application spanning multiple monitors.
+This is a simple xcode project that creates a WKWebView and maximizes it on launch.  This is in response to Apple's "Spaces" system which seems to forbid one application spanning multiple monitors.
 
-This was primarily made out of desperation, for interactive projects which want to run on OSX against multiple screens simultaneuosly in a web browser.
+This was primarily made out of desperation for interactive projects which want to run on OSX against multiple screens simultaneuosly in a web browser.
 
 
 
