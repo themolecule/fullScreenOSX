@@ -36,11 +36,36 @@
     return YES;
 }
 
+//- (BOOL) acceptsFirstResponder
+//{
+//    return YES;
+//}
 
--(void) windowDidResize:(NSNotification*)note
+- (void) windowDidResize:(NSNotification*)note
 {
     [self display];
 }
 
+- (void) cancelOperation:(id)sender
+{
+    //NSLog(@"CANCEL!");
+    exit(0);
+}
+
+/*
+- (void) keyDown:(NSEvent *)theEvent
+{
+    NSLog(@"something: %d",[theEvent keyCode]);
+    
+    switch([theEvent keyCode]) {
+        case 53: // esc
+            NSLog(@"ESC");
+            // Call the full-screen mode method
+            break;
+        default:
+            [super keyDown:theEvent];
+    }
+}
+*/
 
 @end

@@ -106,8 +106,8 @@
     
     //return;
     
-    NSApplication *app = [NSApplication sharedApplication];
-    app.presentationOptions = app.currentSystemPresentationOptions | NSApplicationPresentationFullScreen;
+//    NSApplication *app = [NSApplication sharedApplication];
+//    app.presentationOptions = app.currentSystemPresentationOptions | NSApplicationPresentationFullScreen;
     
     //w.size.width*=.95;
     //w.size.height = 500;
@@ -127,7 +127,7 @@
     //[webView setFrame:w];
     
     //claim focus, so key commands work if started from command line, for instance.
-    [webWindow becomeFirstResponder];
+    //[webWindow becomeFirstResponder];
     
     // hide the cursor
     CGDisplayHideCursor (kCGDirectMainDisplay);

@@ -30,15 +30,6 @@
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Quit RemotoClient" id="DPB-Ro-o2X">
-                                <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="terminate:" target="-1" id="Rpu-qz-Gv4"/>
-                                </connections>
-                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
