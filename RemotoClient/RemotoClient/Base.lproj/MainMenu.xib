@@ -47,6 +47,6 @@
             </view>
             <point key="canvasLocation" x="588.5" y="479"/>
         </window>
-        <viewController id="cSJ-PE-YTV" customClass="WebViewController"/>
+        <viewController id="cSJ-PE-YTV"/>
     </objects>
 </document>

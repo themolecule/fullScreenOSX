@@ -22,6 +22,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    //ensure that focus is captured, so that the escape key, etc. will work.
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
